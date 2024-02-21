@@ -1,0 +1,67 @@
+bazel_dep(name = "rules_java", version = "7.4.0")
+bazel_dep(name = "bazel_skylib", version = "1.4.2")
+bazel_dep(name = "rules_jvm_external", version = "6.0")
+bazel_dep(name = "platforms", version = "0.0.8")  # !!! need for correct @platform resolution
+bazel_dep(name = "bazel_jar_jar", version = "0.1.0")  # Latest version as of 2023/10/31
+
+maven = use_extension("@rules_jvm_external//:extensions.bzl", "maven")
+
+maven.artifact(
+    artifact = "core.specs.alpha",
+    exclusions = ["org.clojure:clojure"],
+    group = "org.clojure",
+    version = "0.2.56",
+)
+
+maven.install(
+    artifacts = [
+        "junit:junit:4.13.2",
+        "com.google.guava:guava:31.1-jre",
+    ],
+    fail_if_repin_required = True,
+    generate_compat_repositories = True,
+    lock_file = "//:maven_install.json",
+    repositories = [
+        "https://repo1.maven.org/maven2/",
+        "https://repo.clojars.org",
+        "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/",
+        "http://maven.snplow.com/releases/",
+        "http://packages.confluent.io/maven/",
+        "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/",
+        "https://s3.amazonaws.com/redshift-maven-repository/release/",
+    ],
+    version_conflict_policy = "pinned",
+)
+
+maven_os = use_extension("@rules_jvm_external//:extensions.bzl", "maven", isolate = True)
+
+maven_os.install(
+    artifacts = [
+        "junit:junit:3.8.2",
+    ],
+    fail_if_repin_required = False,
+    generate_compat_repositories = True,
+    lock_file = "//:maven_install_os.json",
+    repositories = [
+        "https://artifact-cache.it-fivetran.com/repository/maven-central/",
+        "https://repo1.maven.org/maven2/",
+    ],
+    version_conflict_policy = "pinned",
+)
+
+use_repo(maven_os, maven_os = "maven", unpinned_maven_os = "unpinned_maven")
+use_repo(maven, "maven", "unpinned_maven")
+
+toolchains = use_extension("//:java_ext.bzl", "jdk_toolchain")
+
+use_repo(toolchains, "zulu-macosx_aarch64_toolchain_config_repo")
+use_repo(toolchains, "zulu-linux_aarch64_toolchain_config_repo")
+use_repo(toolchains, "zulu-linux_x64_toolchain_config_repo")
+use_repo(toolchains, "zulu-macosx_x64_toolchain_config_repo")
+
+register_toolchains(
+    "@zulu-macosx_aarch64_toolchain_config_repo//:all",
+    "@zulu-linux_aarch64_toolchain_config_repo//:all",
+    "@zulu-linux_x64_toolchain_config_repo//:all",
+    "@zulu-macosx_x64_toolchain_config_repo//:all",
+)
