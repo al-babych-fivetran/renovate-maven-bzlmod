@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 3,
-  "moduleFileHash": "45fbeb699e0486be86a0d2b8ab4fc2144d1031b57a3fc3cad234b73c248e4bc0",
+  "moduleFileHash": "7cb77882cb3216b805d43b36fbd3522d8e71f8c552cba71b56806c3979bc5e43",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -57,7 +57,7 @@
               "devDependency": false,
               "location": {
                 "file": "@@//:MODULE.bazel",
-                "line": 8,
+                "line": 9,
                 "column": 15
               }
             },
@@ -72,19 +72,12 @@
                 "generate_compat_repositories": true,
                 "lock_file": "//:maven_install.json",
                 "repositories": [
-                  "https://artifact-cache.it-fivetran.com/repository/maven-central/",
                   "https://repo1.maven.org/maven2/",
-                  "https://artifact-cache.it-fivetran.com/repository/maven-clojars/",
                   "https://repo.clojars.org",
-                  "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/",
                   "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/",
-                  "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/",
                   "http://maven.snplow.com/releases/",
-                  "https://artifact-cache.it-fivetran.com/repository/maven-confluent/",
                   "http://packages.confluent.io/maven/",
-                  "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/",
                   "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/",
-                  "https://artifact-cache.it-fivetran.com/repository/maven-redshift/",
                   "https://s3.amazonaws.com/redshift-maven-repository/release/"
                 ],
                 "version_conflict_policy": "pinned"
@@ -92,50 +85,8 @@
               "devDependency": false,
               "location": {
                 "file": "@@//:MODULE.bazel",
-                "line": 14,
+                "line": 16,
                 "column": 14
-              }
-            }
-          ],
-          "hasDevUseExtension": false,
-          "hasNonDevUseExtension": true
-        },
-        {
-          "extensionBzlFile": "@rules_jvm_external//:extensions.bzl",
-          "extensionName": "maven",
-          "isolationKey": "<root>~maven_os",
-          "usingModule": "<root>",
-          "location": {
-            "file": "@@//:MODULE.bazel",
-            "line": 48,
-            "column": 25
-          },
-          "imports": {
-            "maven_os": "maven",
-            "unpinned_maven_os": "unpinned_maven"
-          },
-          "devImports": [],
-          "tags": [
-            {
-              "tagName": "install",
-              "attributeValues": {
-                "artifacts": [
-                  "junit:junit:3.8.2"
-                ],
-                "fail_if_repin_required": false,
-                "generate_compat_repositories": true,
-                "lock_file": "//:maven_install_os.json",
-                "repositories": [
-                  "https://artifact-cache.it-fivetran.com/repository/maven-central/",
-                  "https://repo1.maven.org/maven2/"
-                ],
-                "version_conflict_policy": "pinned"
-              },
-              "devDependency": false,
-              "location": {
-                "file": "@@//:MODULE.bazel",
-                "line": 49,
-                "column": 17
               }
             }
           ],
@@ -148,7 +99,7 @@
           "usingModule": "<root>",
           "location": {
             "file": "@@//:MODULE.bazel",
-            "line": 67,
+            "line": 38,
             "column": 27
           },
           "imports": {
@@ -2327,7 +2278,7 @@
       "general": {
         "bzlTransitiveDigest": "vOkppYc6wE/3x4HnEmuAd/USfcKbaNTBbUEl7bKmhsY=",
         "accumulatedFileDigests": {
-          "@@//:maven_install.json": "6409d6ab798cad077e0e49b021cef29cd0fac4f8163e90d89ff88f9ac462d04e",
+          "@@//:maven_install.json": "c8cfcf423f25a326d4c8a7917c12d17c81a9796c4412ebed095cd24139ffa12e",
           "@@rules_jvm_external~6.0//:rules_jvm_external_deps_install.json": "cafb5d2d8119391eb2b322ce3840d3352ea82d496bdb8cbd4b6779ec4d044dda"
         },
         "envVariables": {},
@@ -2351,19 +2302,12 @@
               "name": "rules_jvm_external~6.0~maven~com_google_guava_failureaccess_1_0_1",
               "sha256": "a171ee4c734dd2da837e4b16be9df4661afab72a41adaf31eb84dfdaf936ca26",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
                 "https://repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
                 "https://repo.clojars.org/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
                 "http://maven.snplow.com/releases/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
                 "http://packages.confluent.io/maven/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
               ],
               "downloaded_file_path": "v1/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar"
@@ -2460,19 +2404,12 @@
               "name": "rules_jvm_external~6.0~maven~org_objenesis_objenesis_3_2",
               "sha256": "03d960bd5aef03c653eb000413ada15eb77cdd2b8e4448886edf5692805e35f3",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
                 "https://repo1.maven.org/maven2/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
                 "https://repo.clojars.org/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
                 "http://maven.snplow.com/releases/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
                 "http://packages.confluent.io/maven/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/org/objenesis/objenesis/3.2/objenesis-3.2.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/org/objenesis/objenesis/3.2/objenesis-3.2.jar"
               ],
               "downloaded_file_path": "v1/org/objenesis/objenesis/3.2/objenesis-3.2.jar"
@@ -2599,19 +2536,12 @@
               "name": "rules_jvm_external~6.0~maven~com_google_guava_guava_31_1_jre",
               "sha256": "a42edc9cab792e39fe39bb94f3fca655ed157ff87a8af78e1d6ba5b07c4a00ab",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
                 "https://repo1.maven.org/maven2/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
                 "https://repo.clojars.org/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
                 "http://maven.snplow.com/releases/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
                 "http://packages.confluent.io/maven/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar"
               ],
               "downloaded_file_path": "v1/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar"
@@ -2741,19 +2671,12 @@
               "name": "rules_jvm_external~6.0~maven~org_checkerframework_checker_qual_3_12_0",
               "sha256": "ff10785ac2a357ec5de9c293cb982a2cbb605c0309ea4cc1cb9b9bc6dbe7f3cb",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
                 "https://repo1.maven.org/maven2/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
                 "https://repo.clojars.org/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
                 "http://maven.snplow.com/releases/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
                 "http://packages.confluent.io/maven/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar"
               ],
               "downloaded_file_path": "v1/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar"
@@ -2935,19 +2858,12 @@
               "name": "rules_jvm_external~6.0~maven~unpinned_maven",
               "user_provided_name": "maven",
               "repositories": [
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-central/\" }",
                 "{ \"repo_url\": \"https://repo1.maven.org/maven2/\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-clojars/\" }",
                 "{ \"repo_url\": \"https://repo.clojars.org\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/\" }",
                 "{ \"repo_url\": \"https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-snowplow/\" }",
                 "{ \"repo_url\": \"http://maven.snplow.com/releases/\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-confluent/\" }",
                 "{ \"repo_url\": \"http://packages.confluent.io/maven/\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/\" }",
                 "{ \"repo_url\": \"https://bazel-build-staging.s3.amazonaws.com/binaries-cache/\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-redshift/\" }",
                 "{ \"repo_url\": \"https://s3.amazonaws.com/redshift-maven-repository/release/\" }",
                 "{ \"repo_url\": \"https://repo1.maven.org/maven2\" }"
               ],
@@ -3003,19 +2919,12 @@
               "name": "rules_jvm_external~6.0~maven~org_mockito_mockito_core_4_3_1",
               "sha256": "148de2c6928365db29443ca12d35c930d9f481172b934fdd801d1cb1409ea83a",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
                 "https://repo1.maven.org/maven2/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
                 "https://repo.clojars.org/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
                 "http://maven.snplow.com/releases/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
                 "http://packages.confluent.io/maven/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar"
               ],
               "downloaded_file_path": "v1/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar"
@@ -3097,19 +3006,12 @@
               "name": "rules_jvm_external~6.0~maven~net_bytebuddy_byte_buddy_1_12_7",
               "sha256": "d2e46555699e70361b5471a7e142f9c67855bba6907a285177ebd8ad973775d8",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
                 "https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
                 "https://repo.clojars.org/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
                 "http://maven.snplow.com/releases/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
                 "http://packages.confluent.io/maven/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar"
               ],
               "downloaded_file_path": "v1/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar"
@@ -3122,19 +3024,12 @@
               "name": "rules_jvm_external~6.0~maven~org_ow2_asm_asm_9_0",
               "sha256": "0df97574914aee92fd349d0cb4e00f3345d45b2c239e0bb50f0a90ead47888e0",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/org/ow2/asm/asm/9.0/asm-9.0.jar",
                 "https://repo1.maven.org/maven2/org/ow2/asm/asm/9.0/asm-9.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/org/ow2/asm/asm/9.0/asm-9.0.jar",
                 "https://repo.clojars.org/org/ow2/asm/asm/9.0/asm-9.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/org/ow2/asm/asm/9.0/asm-9.0.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/org/ow2/asm/asm/9.0/asm-9.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/org/ow2/asm/asm/9.0/asm-9.0.jar",
                 "http://maven.snplow.com/releases/org/ow2/asm/asm/9.0/asm-9.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/org/ow2/asm/asm/9.0/asm-9.0.jar",
                 "http://packages.confluent.io/maven/org/ow2/asm/asm/9.0/asm-9.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/org/ow2/asm/asm/9.0/asm-9.0.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/org/ow2/asm/asm/9.0/asm-9.0.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/org/ow2/asm/asm/9.0/asm-9.0.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/org/ow2/asm/asm/9.0/asm-9.0.jar"
               ],
               "downloaded_file_path": "v1/org/ow2/asm/asm/9.0/asm-9.0.jar"
@@ -3159,19 +3054,12 @@
               "name": "rules_jvm_external~6.0~maven~net_bytebuddy_byte_buddy_agent_1_12_7",
               "sha256": "73d84bb6e8e8980e674d796a29063f510ceb527c6f8c912a08a13e236be05c71",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
                 "https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
                 "https://repo.clojars.org/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
                 "http://maven.snplow.com/releases/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
                 "http://packages.confluent.io/maven/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar"
               ],
               "downloaded_file_path": "v1/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar"
@@ -3208,19 +3096,12 @@
               "name": "rules_jvm_external~6.0~maven~com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava",
               "sha256": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
                 "https://repo1.maven.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
                 "https://repo.clojars.org/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
                 "http://maven.snplow.com/releases/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
                 "http://packages.confluent.io/maven/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
               ],
               "downloaded_file_path": "v1/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
@@ -3479,19 +3360,12 @@
               "name": "rules_jvm_external~6.0~maven~com_google_errorprone_error_prone_annotations_2_3_2",
               "sha256": "357cd6cfb067c969226c442451502aee13800a24e950fdfde77bcdb4565a668d",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
                 "https://repo1.maven.org/maven2/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
                 "https://repo.clojars.org/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
                 "http://maven.snplow.com/releases/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
                 "http://packages.confluent.io/maven/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar"
               ],
               "downloaded_file_path": "v1/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar"
@@ -3615,19 +3489,12 @@
               "name": "rules_jvm_external~6.0~maven~com_google_j2objc_j2objc_annotations_1_3",
               "sha256": "21af30c92267bd6122c0e0b4d20cccb6641a37eaf956c6540ec471d584e64a7b",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
                 "https://repo1.maven.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
                 "https://repo.clojars.org/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
                 "http://maven.snplow.com/releases/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
                 "http://packages.confluent.io/maven/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar"
               ],
               "downloaded_file_path": "v1/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar"
@@ -3777,19 +3644,12 @@
               "name": "rules_jvm_external~6.0~maven~com_google_code_gson_gson_2_8_9",
               "sha256": "d3999291855de495c94c743761b8ab5176cfeabe281a5ab0d8e8d45326fd703e",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
                 "https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
                 "https://repo.clojars.org/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
                 "http://maven.snplow.com/releases/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
                 "http://packages.confluent.io/maven/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar"
               ],
               "downloaded_file_path": "v1/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar"
@@ -3823,19 +3683,12 @@
               "name": "rules_jvm_external~6.0~maven~maven",
               "user_provided_name": "maven",
               "repositories": [
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-central/\" }",
                 "{ \"repo_url\": \"https://repo1.maven.org/maven2/\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-clojars/\" }",
                 "{ \"repo_url\": \"https://repo.clojars.org\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/\" }",
                 "{ \"repo_url\": \"https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-snowplow/\" }",
                 "{ \"repo_url\": \"http://maven.snplow.com/releases/\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-confluent/\" }",
                 "{ \"repo_url\": \"http://packages.confluent.io/maven/\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/\" }",
                 "{ \"repo_url\": \"https://bazel-build-staging.s3.amazonaws.com/binaries-cache/\" }",
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-redshift/\" }",
                 "{ \"repo_url\": \"https://s3.amazonaws.com/redshift-maven-repository/release/\" }",
                 "{ \"repo_url\": \"https://repo1.maven.org/maven2\" }"
               ],
@@ -3902,19 +3755,12 @@
               "name": "rules_jvm_external~6.0~maven~com_google_auto_value_auto_value_annotations_1_7_4",
               "sha256": "fedd59b0b4986c342f6ab2d182f2a4ee9fceb2c7e2d5bdc4dc764c92394a23d3",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
                 "https://repo1.maven.org/maven2/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
                 "https://repo.clojars.org/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
                 "http://maven.snplow.com/releases/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
                 "http://packages.confluent.io/maven/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar"
               ],
               "downloaded_file_path": "v1/com/google/auto/value/auto-value-annotations/1.7.4/auto-value-annotations-1.7.4.jar"
@@ -3927,19 +3773,12 @@
               "name": "rules_jvm_external~6.0~maven~junit_junit_4_13_2",
               "sha256": "8e495b634469d64fb8acfa3495a065cbacc8a0fff55ce1e31007be4c16dc57d3",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/junit/junit/4.13.2/junit-4.13.2.jar",
                 "https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/junit/junit/4.13.2/junit-4.13.2.jar",
                 "https://repo.clojars.org/junit/junit/4.13.2/junit-4.13.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/junit/junit/4.13.2/junit-4.13.2.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/junit/junit/4.13.2/junit-4.13.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/junit/junit/4.13.2/junit-4.13.2.jar",
                 "http://maven.snplow.com/releases/junit/junit/4.13.2/junit-4.13.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/junit/junit/4.13.2/junit-4.13.2.jar",
                 "http://packages.confluent.io/maven/junit/junit/4.13.2/junit-4.13.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/junit/junit/4.13.2/junit-4.13.2.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/junit/junit/4.13.2/junit-4.13.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/junit/junit/4.13.2/junit-4.13.2.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/junit/junit/4.13.2/junit-4.13.2.jar"
               ],
               "downloaded_file_path": "v1/junit/junit/4.13.2/junit-4.13.2.jar"
@@ -4000,19 +3839,12 @@
               "name": "rules_jvm_external~6.0~maven~com_google_guava_guava_testlib_31_1_jre",
               "sha256": "aadc71b10d5c3ac474dd16be84cfb18d257e584d1e0a59f8cab64ef4376226ce",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
                 "https://repo1.maven.org/maven2/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
                 "https://repo.clojars.org/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
                 "http://maven.snplow.com/releases/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
                 "http://packages.confluent.io/maven/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar"
               ],
               "downloaded_file_path": "v1/com/google/guava/guava-testlib/31.1-jre/guava-testlib-31.1-jre.jar"
@@ -4037,19 +3869,12 @@
               "name": "rules_jvm_external~6.0~maven~org_hamcrest_hamcrest_core_1_3",
               "sha256": "66fdef91e9739348df7a096aa384a5685f4e875584cce89386a7a47251c4d8e9",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
                 "https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
                 "https://repo.clojars.org/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
                 "http://maven.snplow.com/releases/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
                 "http://packages.confluent.io/maven/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"
               ],
               "downloaded_file_path": "v1/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"
@@ -4071,19 +3896,12 @@
               "name": "rules_jvm_external~6.0~maven~org_clojure_core_specs_alpha_0_2_56",
               "sha256": "fcf442bde02b04a863f2fcc58ee6a2a30c4cf0c970f7dab85634f0ab711166b6",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
                 "https://repo1.maven.org/maven2/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
                 "https://repo.clojars.org/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
                 "http://maven.snplow.com/releases/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
                 "http://packages.confluent.io/maven/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar"
               ],
               "downloaded_file_path": "v1/org/clojure/core.specs.alpha/0.2.56/core.specs.alpha-0.2.56.jar"
@@ -4207,19 +4025,12 @@
               "name": "rules_jvm_external~6.0~maven~com_google_truth_truth_1_1_2",
               "sha256": "a85e03b8b6ae8780f060cfded9500a3d1b5f52808f99a2ea6da9c683313c7518",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
                 "https://repo1.maven.org/maven2/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
                 "https://repo.clojars.org/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
                 "http://maven.snplow.com/releases/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
                 "http://packages.confluent.io/maven/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/com/google/truth/truth/1.1.2/truth-1.1.2.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/com/google/truth/truth/1.1.2/truth-1.1.2.jar"
               ],
               "downloaded_file_path": "v1/com/google/truth/truth/1.1.2/truth-1.1.2.jar"
@@ -4289,19 +4100,12 @@
               "name": "rules_jvm_external~6.0~maven~com_google_code_findbugs_jsr305_3_0_2",
               "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
               "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
                 "https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-clojars/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
                 "https://repo.clojars.org/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-sendwithus/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
                 "https://github.com/sendwithus/sendwithus-mvn-repo/raw/master/releases/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-snowplow/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
                 "http://maven.snplow.com/releases/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-confluent/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
                 "http://packages.confluent.io/maven/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-bazel-build-staging/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
                 "https://bazel-build-staging.s3.amazonaws.com/binaries-cache/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
-                "https://artifact-cache.it-fivetran.com/repository/maven-redshift/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
                 "https://s3.amazonaws.com/redshift-maven-repository/release/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
               ],
               "downloaded_file_path": "v1/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
@@ -4410,104 +4214,13 @@
             }
           }
         },
-        "recordedRepoMappingEntries": []
-      }
-    },
-    "@@rules_jvm_external~6.0//:extensions.bzl%maven%<root>~maven_os": {
-      "general": {
-        "bzlTransitiveDigest": "vOkppYc6wE/3x4HnEmuAd/USfcKbaNTBbUEl7bKmhsY=",
-        "accumulatedFileDigests": {
-          "@@//:maven_install_os.json": "4cc9bc74dab1ad96631e9984e75157324c1775d4d1dda1e46b380372241cab35"
-        },
-        "envVariables": {},
-        "generatedRepoSpecs": {
-          "maven": {
-            "bzlFile": "@@rules_jvm_external~6.0//:coursier.bzl",
-            "ruleClassName": "pinned_coursier_fetch",
-            "attributes": {
-              "name": "rules_jvm_external~6.0~_maven~~~maven_os~maven",
-              "user_provided_name": "maven",
-              "repositories": [
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-central/\" }",
-                "{ \"repo_url\": \"https://repo1.maven.org/maven2/\" }"
-              ],
-              "artifacts": [
-                "{ \"group\": \"junit\", \"artifact\": \"junit\", \"version\": \"3.8.2\" }"
-              ],
-              "fetch_sources": false,
-              "fetch_javadoc": false,
-              "generate_compat_repositories": false,
-              "maven_install_json": "@@//:maven_install_os.json",
-              "override_targets": {},
-              "strict_visibility": false,
-              "strict_visibility_value": [
-                "@@//visibility:private"
-              ],
-              "additional_netrc_lines": [],
-              "fail_if_repin_required": false,
-              "use_starlark_android_rules": false,
-              "aar_import_bzl_label": "@build_bazel_rules_android//android:rules.bzl",
-              "duplicate_version_warning": "warn",
-              "excluded_artifacts": [],
-              "repin_instructions": ""
-            }
-          },
-          "junit_junit_3_8_2": {
-            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-            "ruleClassName": "http_file",
-            "attributes": {
-              "name": "rules_jvm_external~6.0~_maven~~~maven_os~junit_junit_3_8_2",
-              "sha256": "ecdcc08183708ea3f7b0ddc96f19678a0db8af1fb397791d484aed63200558b0",
-              "urls": [
-                "https://artifact-cache.it-fivetran.com/repository/maven-central/junit/junit/3.8.2/junit-3.8.2.jar",
-                "https://repo1.maven.org/maven2/junit/junit/3.8.2/junit-3.8.2.jar"
-              ],
-              "downloaded_file_path": "v1/junit/junit/3.8.2/junit-3.8.2.jar"
-            }
-          },
-          "unpinned_maven": {
-            "bzlFile": "@@rules_jvm_external~6.0//:coursier.bzl",
-            "ruleClassName": "coursier_fetch",
-            "attributes": {
-              "name": "rules_jvm_external~6.0~_maven~~~maven_os~unpinned_maven",
-              "user_provided_name": "maven",
-              "repositories": [
-                "{ \"repo_url\": \"https://artifact-cache.it-fivetran.com/repository/maven-central/\" }",
-                "{ \"repo_url\": \"https://repo1.maven.org/maven2/\" }"
-              ],
-              "artifacts": [
-                "{ \"group\": \"junit\", \"artifact\": \"junit\", \"version\": \"3.8.2\" }"
-              ],
-              "fail_on_missing_checksum": true,
-              "fetch_sources": false,
-              "fetch_javadoc": false,
-              "excluded_artifacts": [],
-              "generate_compat_repositories": false,
-              "version_conflict_policy": "pinned",
-              "override_targets": {},
-              "strict_visibility": false,
-              "strict_visibility_value": [
-                "@@//visibility:private"
-              ],
-              "maven_install_json": "@@//:maven_install_os.json",
-              "resolve_timeout": 600,
-              "use_starlark_android_rules": false,
-              "aar_import_bzl_label": "@build_bazel_rules_android//android:rules.bzl",
-              "duplicate_version_warning": "warn",
-              "ignore_empty_files": false
-            }
-          },
-          "junit_junit": {
-            "bzlFile": "@@rules_jvm_external~6.0//private:compat_repository.bzl",
-            "ruleClassName": "compat_repository",
-            "attributes": {
-              "name": "rules_jvm_external~6.0~_maven~~~maven_os~junit_junit",
-              "generating_repository": "maven",
-              "target_name": "junit_junit"
-            }
-          }
-        },
-        "recordedRepoMappingEntries": []
+        "recordedRepoMappingEntries": [
+          [
+            "rules_jvm_external~6.0",
+            "bazel_tools",
+            "bazel_tools"
+          ]
+        ]
       }
     },
     "@@rules_kotlin~1.9.0//src/main/starlark/core/repositories:bzlmod_setup.bzl%rules_kotlin_extensions": {

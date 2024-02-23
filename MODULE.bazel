@@ -33,23 +33,6 @@ maven.install(
     version_conflict_policy = "pinned",
 )
 
-maven_os = use_extension("@rules_jvm_external//:extensions.bzl", "maven", isolate = True)
-
-maven_os.install(
-    artifacts = [
-        "junit:junit:3.8.2",
-    ],
-    fail_if_repin_required = False,
-    generate_compat_repositories = True,
-    lock_file = "//:maven_install_os.json",
-    repositories = [
-        "https://artifact-cache.it-fivetran.com/repository/maven-central/",
-        "https://repo1.maven.org/maven2/",
-    ],
-    version_conflict_policy = "pinned",
-)
-
-use_repo(maven_os, maven_os = "maven", unpinned_maven_os = "unpinned_maven")
 use_repo(maven, "maven", "unpinned_maven")
 
 toolchains = use_extension("//:java_ext.bzl", "jdk_toolchain")

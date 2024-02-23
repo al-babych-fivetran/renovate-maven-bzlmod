@@ -15,7 +15,7 @@ java_binary(
     main_class = "none",
     srcs = ["target/Target.java"],
     deps = [
-        "@maven_os//:junit_junit"
+        "@maven//:junit_junit"
     ]
 )
 jar_jar(
