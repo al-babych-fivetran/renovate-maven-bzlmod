@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "prConcurrentLimit": 2,
+  "prConcurrentLimit": 200,
   "enabledManagers": [
     "bazel",
     "bazel-module"
