@@ -16,7 +16,7 @@ maven.artifact(
 maven.install(
     artifacts = [
         "junit:junit:4.4",
-        "com.google.guava:guava:31.1-jre",
+        "com.google.guava:guava:33.3.0-jre",
     ],
     fail_if_repin_required = True,
     generate_compat_repositories = True,
