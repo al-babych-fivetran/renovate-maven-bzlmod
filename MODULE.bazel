@@ -10,7 +10,7 @@ maven.artifact(
     artifact = "core.specs.alpha",
     exclusions = ["org.clojure:clojure"],
     group = "org.clojure",
-    version = "0.2.56",
+    version = "0.4.74",
 )
 
 maven.install(
